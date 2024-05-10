@@ -51,7 +51,7 @@ typedef struct {
   uint8_t bit1       : 1;
   uint8_t bit0       : 1;
 #endif /* DRV_BYTE_ORDER */
-} bitwise_t;
+} lps22df_bitwise_t;
 
 #define PROPERTY_DISABLE                (0U)
 #define PROPERTY_ENABLE                 (1U)
@@ -365,7 +365,7 @@ typedef union {
   lps22df_fifo_status1_t     fifo_status1;
   lps22df_fifo_status2_t     fifo_status2;
   lps22df_status_t           status;
-  bitwise_t                  bitwise;
+  lps22df_bitwise_t                  bitwise;
   uint8_t                    byte;
 } lps22df_reg_t;
 
