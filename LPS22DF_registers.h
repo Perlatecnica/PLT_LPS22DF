@@ -49,7 +49,7 @@ typedef struct{
 typedef struct {
   uint8_t address;
   uint8_t data;
-} stts22h_ucf_line_t;
+} lps22df_ucf_line_t;
 
 
 
