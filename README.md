@@ -29,6 +29,6 @@ The LPS22DF is housed in a full-mold, holed LGA package (HLGA), which ensures op
 - Small and thin package
 - ECOPACK lead-free compliant
 
-  ## Official Documentation
-  ---
-  [Official documentation](https://www.st.com/en/mems-and-sensors/lps22df.html)
+##Official Documentation
+---
+[Official documentation](https://www.st.com/en/mems-and-sensors/lps22df.html)
