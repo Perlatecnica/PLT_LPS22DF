@@ -31,8 +31,7 @@ SOFTWARE.
 #ifndef LPS22DF_REGS_H
 #define LPS22DF_REGS_H
 
-typedef struct {
-#if DRV_BYTE_ORDER == DRV_LITTLE_ENDIAN
+typedef struct{
   uint8_t bit0       : 1;
   uint8_t bit1       : 1;
   uint8_t bit2       : 1;
@@ -41,16 +40,6 @@ typedef struct {
   uint8_t bit5       : 1;
   uint8_t bit6       : 1;
   uint8_t bit7       : 1;
-#elif DRV_BYTE_ORDER == DRV_BIG_ENDIAN
-  uint8_t bit7       : 1;
-  uint8_t bit6       : 1;
-  uint8_t bit5       : 1;
-  uint8_t bit4       : 1;
-  uint8_t bit3       : 1;
-  uint8_t bit2       : 1;
-  uint8_t bit1       : 1;
-  uint8_t bit0       : 1;
-#endif /* DRV_BYTE_ORDER */
 } lps22df_bitwise_t;
 
 #define PROPERTY_DISABLE                (0U)
@@ -60,7 +49,7 @@ typedef struct {
 typedef struct {
   uint8_t address;
   uint8_t data;
-} ucf_line_t;
+} lps22df_ucf_line_t;
 
 
 
@@ -365,7 +354,7 @@ typedef union {
   lps22df_fifo_status1_t     fifo_status1;
   lps22df_fifo_status2_t     fifo_status2;
   lps22df_status_t           status;
-  lps22df_bitwise_t                  bitwise;
+  lps22df_bitwise_t          bitwise;
   uint8_t                    byte;
 } lps22df_reg_t;
 
